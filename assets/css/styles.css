@@ -1,0 +1,40 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fafafa;
+}
+
+.navbar {
+    background-color: #ffffff !important;
+}
+
+.navbar-brand {
+    color: #000000 !important;
+}
+
+.navbar-nav .nav-link {
+    color: #000000 !important;
+}
+
+.container {
+    margin-top: 30px;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+textarea {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #f1f1f1;
+    color: #555555;
+}

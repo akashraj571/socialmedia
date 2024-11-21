@@ -1,0 +1,490 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+    margin: 0 10px;
+}
+
+.posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.post-card {
+    width: 300px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.post-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.post-header {
+    padding: 15px;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #ddd;
+}
+
+.post-header h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.post-content {
+    padding: 15px;
+}
+
+.post-content img,
+.post-content video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.post-footer {
+    padding: 15px;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-footer .like-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.post-footer .like-btn:hover {
+    background-color: #0056b3;
+}
+
+.post-footer .comment-form {
+    display: flex;
+    width: 100%;
+}
+
+.post-footer .comment-form input {
+    flex: 1;
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.post-footer .comment-form button {
+    padding: 8px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.post-footer .comment-form button:hover {
+    background-color: #218838;
+}
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Navigation Bar Styling */
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar .logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.navbar .nav-links a {
+    margin: 0 15px;
+    font-size: 16px;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+    color: #007bff;
+}
+
+/* Posts Section Styling */
+.posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.post-card {
+    width: 300px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.post-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.post-header {
+    padding: 15px;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #ddd;
+}
+
+.post-header h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.post-content {
+    padding: 15px;
+}
+
+.post-content img,
+.post-content video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.post-footer {
+    padding: 15px;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-footer .like-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.post-footer .like-btn:hover {
+    background-color: #0056b3;
+}
+
+.post-footer .comment-form {
+    display: flex;
+    width: 100%;
+}
+
+.post-footer .comment-form input {
+    flex: 1;
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.post-footer .comment-form button {
+    padding: 8px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.post-footer .comment-form button:hover {
+    background-color: #218838;
+}
+/* Navigation Bar Styling */
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar .logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #3897f0;  /* Instagram blue color */
+    text-decoration: none;
+}
+
+.navbar .nav-links a {
+    margin: 0 15px;
+    font-size: 16px;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+    color: #3897f0;  /* Instagram blue hover effect */
+}
+/* Profile Page Styling */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar .logo a {
+    font-size: 24px;
+    color: #000;
+    text-decoration: none;
+}
+
+.navbar .nav-links a {
+    margin-left: 20px;
+    color: #000;
+    text-decoration: none;
+}
+
+.profile {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.profile-pic img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #3897f0;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2874c3;
+}
+
+.post-gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.post-item {
+    width: 150px;
+    margin: 10px;
+}
+
+.post-item img, .post-item video {
+    width: 100%;
+    border-radius: 10px;
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #fff;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo a {
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar .nav-links a {
+    margin-left: 20px;
+    color: #333;
+    text-decoration: none;
+}
+
+.navbar .nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Profile Section */
+.profile {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile h2 {
+    font-size: 24px;
+}
+
+.profile p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+/* Post Cards */
+.posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.post-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+}
+
+.post-header h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.post-content img, .post-content video {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.post-footer {
+    margin-top: 15px;
+}
+
+.post-footer p {
+    font-size: 14px;
+    color: #555;
+}
+
+.like-btn {
+    background-color: #3897f0;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.like-btn:hover {
+    background-color: #2874c3;
+}
+
+.comment-form {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.comment-form input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    flex: 1;
+    margin-right: 10px;
+}
+
+.comment-form button {
+    background-color: #3897f0;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.comment-form button:hover {
+    background-color: #2874c3;
+}
+
+/* Icon Style */
+.like-icon, .view-icon {
+    margin-right: 5px;
+    font-size: 18px;
+}
